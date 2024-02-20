@@ -4,5 +4,3 @@ build
 .vscode/
 .idea/
 *.tsbuildinfo
-.nyc_output
-coverage
