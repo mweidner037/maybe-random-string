@@ -1,24 +1,26 @@
 {
-  "name": "TODO",
+  "name": "maybe-random-string",
   "version": "0.1.0",
-  "description": "TODO",
+  "description": "Returns a random or pseudorandom string",
   "author": "Matthew Weidner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TODO/issues"
+    "url": "https://github.com/mweidner037/maybe-random-string/issues"
   },
-  "homepage": "https://github.com/TODO/tree/master/#readme",
+  "homepage": "https://github.com/mweidner037/maybe-random-string#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TODO.git"
+    "url": "git+https://github.com/mweidner037/maybe-random-string.git"
   },
   "keywords": [
-    "TODO"
+    "random",
+    "pseudorandom",
+    "UUID"
   ],
-  "module": "build/esm/index.js",
-  "browser": "build/esm/index.js",
-  "types": "build/esm/index.d.ts",
-  "main": "build/commonjs/index.js",
+  "module": "build/esm/browser.js",
+  "browser": "build/esm/browser.js",
+  "main": "build/commonjs/node.js",
+  "types": "build/esm/browser.d.ts",
   "files": [
     "/build",
     "/src"

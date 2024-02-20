@@ -6,14 +6,14 @@ import { randomBytes } from "crypto";
 */
 
 /**
- * Default randomString length: 21.
+ * Default maybeRandomString length: 21.
  *
  * This is the same as [nanoid](https://www.npmjs.com/package/nanoid)
  * and gives as much entropy as a UUIDv4 (with the DEFAULT_CHARS).
  */
 export const DEFAULT_LENGTH = 21;
 /**
- * Default randomString characters: the alphanumeric chars (0-9A-Za-z).
+ * Default maybeRandomString characters: the alphanumeric chars (0-9A-Za-z).
  */
 export const DEFAULT_CHARS =
   "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -25,11 +25,11 @@ export const DEFAULT_CHARS =
  * string, supply a PRNG,
  * e.g., from package [seedrandom](https://www.npmjs.com/package/seedrandom):
  * ```ts
- * import { randomString } from "maybe-random-string";
+ * import { maybeRandomString } from "maybe-random-string";
  * import seedrandom from "seedrandom";
  *
  * const prng = seedrandom("42");
- * console.log(randomString({ prng })); // Prints "TODO" every time.
+ * console.log(maybeRandomString({ prng })); // Prints "TODO" every time.
  * ```
  *
  * @param options.prng A PRNG that outputs floating-point values in the range [0, 1).
@@ -42,7 +42,7 @@ export const DEFAULT_CHARS =
  * Note: Only the first 256 characters are used. You get about
  * `log2(chars.length)` bits of entropy per output character.
  */
-export function randomString(options?: {
+export function maybeRandomString(options?: {
   prng?: () => number;
   length?: number;
   chars?: string;
