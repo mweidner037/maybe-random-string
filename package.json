@@ -1,6 +1,6 @@
 {
   "name": "maybe-random-string",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Returns a random or pseudorandom string",
   "author": "Matthew Weidner",
   "license": "MIT",
