@@ -29,14 +29,14 @@ export const DEFAULT_CHARS =
  * import seedrandom from "seedrandom";
  *
  * const prng = seedrandom("42");
- * console.log(maybeRandomString({ prng })); // Prints "TODO" every time.
+ * console.log(maybeRandomString({ prng })); // Prints "1hzgoFbbyPobjILzNNxbd" every time.
  * ```
  *
  * @param options.prng A PRNG that outputs floating-point values in the range [0, 1).
  * If not provided, the string is cryptographically random.
  * @param options.length The length of the returned string.
  * Default: `DEFAULT_LENGTH = 21`.
- * @param options.chars The characters to draw from.
+ * @param options.chars The character set to draw from.
  * Default: `DEFAULT_CHARS =` the alphanumeric chars (0-9A-Za-z).
  *
  * Note: Only the first 256 characters are used. You get about
